@@ -10,9 +10,9 @@ class HomeController extends Controller
     public function index() {
 
         // get date from db
-        $cars = Car::all();
-        dd($cars);
+        $cars = Car::all(); //SELECT * FROM 'cars'
+        //dd($cars);
 
-        return view('home');
+        return view('home', compact('cars'));
     }
 }
