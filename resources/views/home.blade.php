@@ -14,3 +14,18 @@
         @endforeach
     </ul>
 @endsection
+
+    <section id="app">
+        <h3>Bikes</h3>
+        <ul>
+            <li v-for='bike in bikes'>
+                <h2>@{{bike.modello}}</h2>
+                <div>@{{bike.marca}}</div>
+                <div>@{{bike.targa}}</div>
+            </li>
+        </ul>
+    </section>
+
+
+    <!-- {{-- JS --}} -->
+    <script src="{{asset('js/app.js')}}"></script>
